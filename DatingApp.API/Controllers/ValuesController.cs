@@ -23,6 +23,7 @@ namespace DatingApp.API.Controllers
         }
         // GET api/values
         // async - to get better performance by not blocking a thread until a reposone is recevied from the server
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
